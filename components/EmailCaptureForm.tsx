@@ -3,6 +3,7 @@ import { Mail, ArrowRight } from 'lucide-react';
 import { Input } from './Input';
 import { Button } from './Button';
 import { FormStatus } from '../types';
+import logoImage from '/logo.png';
 
 export const EmailCaptureForm: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -52,7 +53,7 @@ export const EmailCaptureForm: React.FC = () => {
       <div className="p-8">
         <div className="flex flex-col items-center justify-center mb-6">
           <img 
-            src="/logo.png" 
+            src={logoImage} 
             alt="Third Wave Coffee Logo" 
             className="h-32 w-auto mb-2"
           />
